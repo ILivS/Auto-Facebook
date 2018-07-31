@@ -3,7 +3,7 @@ date_default_timezone_set("Asia/Ho_Chi_Minh");
 
 define('ENDPOINT', 'https://graph.fb.me/');
 define('ACCESS_TOKEN', ''); 
-define('USER_ID', '100004604580198'); 
+define('USER_ID', ''); 
 define('MY_USER_ID', '100010835689571'); 
 $posts = curl(ENDPOINT.USER_ID.'/posts?fields=id&limit=1&access_token='.ACCESS_TOKEN); 
 $idFirstPost = $posts->data[0]->id; // Get first ID status
