@@ -7,7 +7,7 @@ define('USER_ID', '');
 define('MY_USER_ID', '100010835689571'); 
 $posts = curl(ENDPOINT.USER_ID.'/posts?fields=id&limit=1&access_token='.ACCESS_TOKEN); 
 $idFirstPost = $posts->data[0]->id; // Get first ID status
-$list_cmt = ['clmm', 'cmm', 'dmm', '.',':(','Comment+tăng+tương+tác+nè',':poop:','lòn','mệt+lòn',':P',':D',':)']; 
+$list_cmt = ['']; 
 
 if(!checkCmt($idFirstPost)) {
     $cmt = $list_cmt[array_rand($list_cmt)];
